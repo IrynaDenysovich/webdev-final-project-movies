@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      sizes="16x16"
+      href="/src/img/fav-icon.svg"
+      type="image/png"
+    />
+    <link
+      rel="shortcut icon"
+      sizes="32x32"
+      href="/src/img/fav-icon.svg"
+      type="image/png"
+    />
+    <link rel=" stylesheet" href="./sass/index.scss" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Filmoteka</title>
+  </head>
+  <body>
+    <!-- ❗️❗️❗️ Add partials like so for every page -->
+    <include src="./partials/loader.html"></include>
+    <header class="header-index">
+      <include src="./partials/index-header.html"></include>
+    </header>
+    <main>
+      <include src="./partials/hero.html"></include>
+      <!-- <include src="./partials/card-for-movie.html"></include> -->
+      <include src="./partials/modal-movie.html"></include>
+    </main>
+    <footer class="footer-index">
+      <include src="./partials/footer.html"></include>
+      <include src="./partials/team-modal.html"></include>
+    </footer>
+
+    <script type="module" src="./index.js"></script>
+
+    <!-- <script type="module" src="./js/modal-for-movie.js"></script> -->
+
+    <script src="https://unpkg.com/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js"></script>
+    <script>
+      addBackToTop({
+        diameter: 55,
+        backgroundColor: '#dddddd',
+        textColor: '#ff6b08',
+        innerHTML:
+          '<svg viewBox="0 0 32 32"><path d="M16 2.667l-10 24.387 0.947 0.947 9.053-4 9.053 4 0.947-0.947-10-24.387z"></path></svg>',
+      });
+    </script>
+  </body>
+</html>
